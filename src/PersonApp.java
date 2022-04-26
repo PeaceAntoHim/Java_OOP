@@ -18,6 +18,10 @@ public class PersonApp {
         System.out.println(person2);
         System.out.println(person3);
 
+        // Call method/functuion at OOP
+        person1.sayHello("Frans Sebastian");
 
+        person3.name = "Budi";
+        person3.sayHello("Frans Sebastian");
     }
 }
