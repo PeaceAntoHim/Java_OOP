@@ -13,6 +13,7 @@ public class PersonApp {
         Person person2 = new Person("Frans", "Pluit");
         Person person3;
         person3 = new Person("Frans", "Pluit");
+        person3.name = "Abie";
 
         System.out.println(person1);
         System.out.println(person2);

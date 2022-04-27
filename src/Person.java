@@ -13,7 +13,15 @@ class Person {
 
         // Constractor Overloading
         Person(String paramName) {
+            // Call another Constractor use this function
+            this(paramName, null);
+            // Use without this
             name = paramName;
+        }
+
+        // Example 2 to call another constructor
+        Person() {
+            this(null);
         }
 
     // Method at OOP
