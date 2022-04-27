@@ -17,6 +17,10 @@ class Person {
             this(paramName, null);
             // Use without this
             name = paramName;
+
+            // Variable Shadowing
+            name = name; // Field nama tidak ditemukan
+            address = address; // Field address tidak berubah
         }
 
         // Example 2 to call another constructor
@@ -28,6 +32,9 @@ class Person {
         // Contoh Pertama
         void sayHello(String paramName) {
             System.out.println("Hello " + paramName + ", My name is " + name);
+
+            // Contoh Variable Shadowing
+            System.out.println("Hello " + name + ", My Name is " + name); // field name tidak diakses
         }
 
 }
