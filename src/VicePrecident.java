@@ -1,0 +1,3 @@
+class VicePrecident extends Manager {
+
+}
