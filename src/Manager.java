@@ -1,19 +1,19 @@
-class Manager {
-    String name;
+class Manager extends Employee {
+//    String name;
 
     // Constructor without parameter is default constructor
     String company;
-    Manager() {
-        this.name = name;
-    }
+//    Manager() {
+//        this.name = name;
+//    }
 
     // This constructor it's not default cause using parameter
     Manager(String name) {
-        this.name = name;
+        super(name);
     }
 
     Manager(String name, String company) {
-        this.name = name;
+        super(name);
         this.company = company;
     }
 
