@@ -15,13 +15,32 @@ public class PolymorphismApp {
         // This to set code at bellow
         System.out.println("\n This application use polymorphism");
         sayHello(new Employee("Sasuke"));
-        sayHello(new Employee("Madara"));
-        sayHello(new Employee("Luffy"));
+        sayHello(new Manager("Madara"));
+        sayHello(new VicePrecident("Luffy"));
+
+        // This code to check code use Type Check and Casts
+        System.out.println("\n This application use instanceof to gave logic");
+        sayHallo(new Employee("Zoro"));
+        sayHallo(new Manager("Sanji"));
+        sayHallo(new VicePrecident("Chopper"));
 
     }
 
     // Application code use polymorphism
     static void sayHello(Employee employee) {
         System.out.println("Hello " + employee.name);
+    }
+
+    // Contoh kedua use Type Check and Casts to check
+    static void sayHallo(Employee employee) {
+        if (employee instanceof VicePrecident) {
+            VicePrecident vicePrecident = (VicePrecident) employee;
+            System.out.println("Hello VP " + vicePrecident.name);
+        } else if (employee instanceof Manager) {
+            Manager manager = (Manager) employee;
+            System.out.println("Hello Manager " + manager.name);
+        } else {
+            System.out.println("Hello " + employee.name);
+        }
     }
 }
