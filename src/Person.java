@@ -21,6 +21,10 @@ class Person {
             // Variable Shadowing
             name = name; // Field nama tidak ditemukan
             address = address; // Field address tidak berubah
+
+            // This keyword to access object and method this function can resolve shadowing problem
+            this.name = name;
+            this.address = address;
         }
 
         // Example 2 to call another constructor
@@ -35,7 +39,14 @@ class Person {
 
             // Contoh Variable Shadowing
             System.out.println("Hello " + name + ", My Name is " + name); // field name tidak diakses
+
+            // This keyword to access object and method this function can resolve shadowing problem
+            System.out.println("Hello " + name + ", My Name is " + this.name);
+
         }
+
+
+
 
 }
 

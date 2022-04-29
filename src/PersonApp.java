@@ -22,5 +22,7 @@ public class PersonApp {
         // Call method/function at OOP & Constractor
         person1.sayHello("Frans Sebastian");
         person3.sayHello("Frans Sebastian");
+
+
     }
 }
