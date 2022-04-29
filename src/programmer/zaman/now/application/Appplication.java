@@ -12,6 +12,5 @@ public class Appplication {
         System.out.println(product.name);
         System.out.println(product.price);
 
-
     }
 }
