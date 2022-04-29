@@ -2,6 +2,7 @@ package programmer.zaman.now.data;
 
 
 // Access modifier
+// This class public can to access with diffrent type package
 public class Product {
     // This public variabel
     public String name;
