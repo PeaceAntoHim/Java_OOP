@@ -11,7 +11,7 @@ public class CategoryApp {
 
 
         System.out.println(category.getId());
-//        System.out.println(category.isExpensive());
+//      System.out.println(category.isExpensive());
 
     }
 }
