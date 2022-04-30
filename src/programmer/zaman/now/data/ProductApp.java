@@ -13,5 +13,8 @@ public class ProductApp {
 
         // This use equals method
         System.out.println("This use equals method " + product.equals(product2));
+
+        // This to compare hasCode
+        System.out.println("This how i want to compare hashCode " + (product.hashCode() == product2.hashCode()));
     }
 }
