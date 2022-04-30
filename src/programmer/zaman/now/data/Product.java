@@ -18,4 +18,9 @@ public class Product {
         this.price = price;
     }
 
+    // Learn how toString Method
+    public String toString() {
+        return "Product name: " + name + ", price: " + price;
+    }
+
 }
