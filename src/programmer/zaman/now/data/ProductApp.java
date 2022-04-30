@@ -8,5 +8,10 @@ public class ProductApp {
         System.out.println(product.price);
 
         System.out.println(product);
+
+        Product product2 = new Product("Mac book pro", 300000000);
+
+        // This use equals method
+        System.out.println("This use equals method " + product.equals(product2));
     }
 }
