@@ -32,7 +32,6 @@ public class ValidationApp {
             System.out.println("This will execute");
         }
 
-
-
+        // This code to access runtime exception
     }
 }

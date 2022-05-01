@@ -1,11 +1,12 @@
 package programmer.zaman.now.util;
 
 import programmer.zaman.now.data.LoginRequest;
+import programmer.zaman.now.error.BlankException;
 import programmer.zaman.now.error.ValidationExceptions;
 
 public class ValidationUtil {
 
-    // This validation user
+    // This checked exception to validation user
     public static void validate(LoginRequest loginRequest) throws ValidationExceptions, NullPointerException{
         if (loginRequest.username() == null) {
             throw  new NullPointerException("Username is null");
@@ -15,6 +16,19 @@ public class ValidationUtil {
             throw new NullPointerException("Password is null");
         } else if (loginRequest.password().isBlank()) {
             throw new ValidationExceptions("Password is blank");
+        }
+    }
+
+    // This runtime exception to validation user
+    public static void validateRuntime(LoginRequest loginRequest) {
+        if (loginRequest.username() == null) {
+            throw new BlankException("Usename should not null");
+        } else if (loginRequest.username().isBlank()) {
+            throw new BlankException("Username should not blank");
+        } else if (loginRequest.password() == null) {
+            throw new BlankException("Password should not null");
+        } else if (loginRequest.password().isBlank()) {
+            throw new BlankException("Password should not blank");
         }
     }
 
