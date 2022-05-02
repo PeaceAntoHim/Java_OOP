@@ -1,5 +1,7 @@
 package programmer.zaman.now.data;
 
+import programmer.zaman.now.annotation.Fancy;
+
 public class Category {
 
     // This is encapsulation good to set private cause we can extend the value

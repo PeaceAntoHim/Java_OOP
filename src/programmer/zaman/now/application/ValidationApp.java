@@ -3,10 +3,10 @@ package programmer.zaman.now.application;
 import programmer.zaman.now.data.LoginRequest;
 import programmer.zaman.now.error.ValidationExceptions;
 import programmer.zaman.now.util.ValidationUtil;
+import programmer.zaman.now.annotation.Fancy;
 
 public class ValidationApp {
     public static void main(String[] args) {
-
         LoginRequest loginRequest = new LoginRequest( null, "123456");
 
         // Thia to get validation exception
@@ -22,7 +22,7 @@ public class ValidationApp {
         //        }
         // Example 2
         try {
-            ValidationUtil.validate(loginRequest);
+                    ValidationUtil.validate(loginRequest);
             System.out.println("Data Valid");
             // Made dual exception
         } catch (ValidationExceptions | NullPointerException exceptions) {
